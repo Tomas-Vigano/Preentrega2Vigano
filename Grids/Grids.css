@@ -7,7 +7,7 @@
     }
 
     .proyecto{
-        padding: 10px;
+        
         display: grid;
         justify-content: center;
         grid-template-columns: 400px 400px 400px;
@@ -37,14 +37,56 @@
 
     .section-header{
         grid-area: section-header;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        
+    }
+    
+    .header-tittle{
+        text-align: center;
+        background-color: blue;
+        font-size: 80px;
+        
     }
     
     .navbar{
         grid-area: navbar;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: brown;
+        
     }
+    .nav-item{
+        color: beige;
+    }
+
+    .path-header{
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .general-header-index{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    
+    
 
     .index-menu{
         grid-area: index-menu;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: chartreuse;
+    }
+    .images-div{
+        
     }
 
     .derivation-index-menu{
@@ -53,6 +95,17 @@
     
 
     .images-of-arda{
+        width: 300px;
+        height: 200px;
+        border-radius: 5px;
+    }
+    
+    .videos-of-arda{
+        width: 300px;
+        height: 200px;
+    }
+
+    .coffe-talks-videos{
         width: 300px;
         height: 200px;
     }
