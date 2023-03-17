@@ -85,9 +85,7 @@
         align-items: center;
         background-color: chartreuse;
     }
-    .images-div{
-        
-    }
+   
 
     .derivation-index-menu{
         grid-area: derivation-index-menu;
@@ -113,5 +111,78 @@
     .footer{
         grid-area: footer;
     }
+
+    .proyecto-2{
+        
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 200px 950px;
+        grid-template-rows:300px 50px 100px 1000px 200px;
+        row-gap: 5px;
+        column-gap: 5px;
+
+        grid-template-areas: 
+        
+        "section-header-2 section-header-2 "
+        
+        "navbar-2 navbar-2 "
+        
+        "galery-information galery "
+
+        "galery-information galery "
+
+        "footer-2 footer-2 ";
+
+    }
+
+    .section-header-2{
+        grid-area: section-header-2;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .navbar-2{
+        grid-area: navbar-2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: brown;
+    }
+
+    .galery-information{
+        grid-row: galery-information;
+        font-size: 30px;
+        
+    }
+
+    .galery{
+        grid-row: galery;
+        display: flex;
+    
+        justify-content: center;
+
+
+    }
+
+    .image-galery{
+        height: 200px;
+        width: 300px;
+    }
+
+    .footer-2{
+        grid-area: footer-2;
+    }
+
+
+
+
+    .section-header-2, .navbar-2, .galery-information, .galery, .footer-2{
+        padding: 10px; 
+        border: 2px solid; 
+
+    }
+
 
     
