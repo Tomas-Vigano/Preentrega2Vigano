@@ -1,0 +1,64 @@
+    *{
+        padding:0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: auto;
+        text-decoration: none;
+    }
+
+    .proyecto{
+        padding: 10px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 300px 50px 1000px 150px 200px;
+        row-gap: 5px;
+        column-gap: 5px;
+        
+        grid-template-areas:
+        
+        "section-header section-header section-header"
+        
+        "navbar navbar navbar"
+        
+        "index-menu index-menu index-menu"
+        
+        "derivation-index-menu derivation-index-menu derivation-index-menu"
+        
+        "footer footer footer"
+        ;
+    }
+
+    .section-header, .navbar, .index-menu, .derivation-index-menu, .footer{
+        padding: 10px; 
+        border: 2px solid;  
+    
+    }
+
+    .section-header{
+        grid-area: section-header;
+    }
+    
+    .navbar{
+        grid-area: navbar;
+    }
+
+    .index-menu{
+        grid-area: index-menu;
+    }
+
+    .derivation-index-menu{
+        grid-area: derivation-index-menu;
+    }
+    
+
+    .images-of-arda{
+        width: 300px;
+        height: 200px;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+
+    
