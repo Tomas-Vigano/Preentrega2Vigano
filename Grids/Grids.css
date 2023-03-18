@@ -14,12 +14,11 @@
     .proyecto{
         
         display: grid;
-        justify-content: center;
-        width: 100%;
+        justify-content: space-between;
         grid-template-columns: 500px 500px 500px;
         grid-template-rows: 400px 50px 1000px 150px 200px;
         row-gap: 5px;
-        column-gap: 5px;
+        column-gap: 5px; 
         
         grid-template-areas:
         
@@ -43,7 +42,8 @@
 
     .section-header{
         grid-area: section-header;
-        background-image: url(../Media/Imagenes/Telperion.jpg);
+        background: linear-gradient(rgba(12,12,12,0.479),rgba(12,12,12,0.479)),url(../Media/Imagenes/Telperion.jpg);
+        /* background-image: url(../Media/Imagenes/Telperion.jpg); */
         background-position: center;
         display: flex;
         align-items: center;
@@ -57,16 +57,25 @@
         font-family: 'LOTR';
         font-size: 100px;
         width: 800px;
+        color: white;
         
     }
     
     .navbar{
-        grid-area: navbar;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        grid-area: navbar;  
+        background-color: burlywood;
+        
         
     }
+     
+
+    .navbar ul{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        
+
+    } 
     .nav-item{
         color: black;
         font-family: 'LOTR', Courier, monospace;
@@ -91,7 +100,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: chartreuse;
+        
     }
    
 
