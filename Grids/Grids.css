@@ -6,13 +6,18 @@
         text-decoration: none;
     }
 
+    @font-face{
+        font-family: "LOTR";
+        src: url(../Grids/Fonts/LOTR.TTF);
+    }
+
     .proyecto{
         
         display: grid;
         justify-content: center;
         width: 100%;
         grid-template-columns: 500px 500px 500px;
-        grid-template-rows: 300px 50px 1000px 150px 200px;
+        grid-template-rows: 400px 50px 1000px 150px 200px;
         row-gap: 5px;
         column-gap: 5px;
         
@@ -38,18 +43,20 @@
 
     .section-header{
         grid-area: section-header;
-        background-image: url(../Media/Imagenes/Valinor\ Shine.png);
+        background-image: url(../Media/Imagenes/Telperion.jpg);
         background-position: center;
         display: flex;
         align-items: center;
-        justify-content: center;    
+        justify-content: center;  
+          
         
     }
     
     .header-tittle{
         text-align: center;
-        
-        font-size: 80px;
+        font-family: 'LOTR';
+        font-size: 100px;
+        width: 800px;
         
     }
     
@@ -58,11 +65,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: brown;
         
     }
     .nav-item{
-        color: beige;
+        color: black;
+        font-family: 'LOTR', Courier, monospace;
+        font-size: 20px;
     }
 
     .path-header{
