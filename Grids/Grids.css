@@ -1,3 +1,6 @@
+    
+    /* CSS GLOBAL */
+    
     *{
         padding:0;
         margin: 0;
@@ -11,6 +14,9 @@
         src: url(../Grids/Fonts/LOTR.TTF);
     }
 
+
+
+    /* CSS INDEX */
     .proyecto{
         
         display: grid;
@@ -33,13 +39,11 @@
         "footer footer footer"
         ;
     }
-
     .section-header, .navbar, .index-menu, .derivation-index-menu, .footer{
         padding: 10px; 
         border: 2px solid;  
     
     }
-
     .section-header{
         grid-area: section-header;
         background: linear-gradient(rgba(12,12,12,0.479),rgba(12,12,12,0.479)),url(../Media/Imagenes/Telperion.jpg);
@@ -50,8 +54,7 @@
         justify-content: center;  
           
         
-    }
-    
+    }   
     .header-tittle{
         text-align: center;
         font-family: 'LOTR';
@@ -59,16 +62,13 @@
         width: 800px;
         color: white;
         
-    }
-    
+    }   
     .navbar{
         grid-area: navbar;  
         background-color: burlywood;
         
         
-    }
-     
-
+    }    
     .navbar ul{
         display: flex;
         justify-content: space-around;
@@ -81,64 +81,46 @@
         font-family: 'LOTR', Courier, monospace;
         font-size: 20px;
     }
-
     .path-header{
         font-size: 40px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
-
     .general-header-index{
         margin-bottom: 10px;
         margin-top: 10px;
         font-size: 30px;
     }
-
-    
     .index-menu{
         grid-area: index-menu;
         display: flex;
         flex-direction: column;
         align-items: center;
         
-    }
-   
-
+    }  
     .derivation-index-menu{
         grid-area: derivation-index-menu;
-    }
-    
-
+    }  
     .images-of-arda{
         width: 300px;
         height: 200px;
         border-radius: 5px;
-    }
-    
+    }   
     .videos-of-arda{
         width: 300px;
         height: 200px;
     }
-
     .coffe-talks-videos{
         width: 300px;
         height: 200px;
     }
-
     .footer{
         grid-area: footer;
     }
 
 
 
-
-
-
-
-
-
-
-
+    /* CSS GALERIA */
     .proyecto-2{
         
         display: grid;
@@ -212,14 +194,8 @@
 
 
 
-
-
-
-
-
-
-
-.proyecto-3{
+    /* CSS NOSOTROS */
+    .proyecto-3{
     display: grid;
     justify-content: center;
     width: 100%;
@@ -239,47 +215,47 @@
     "content-information-2 content-information-2 content-information-2"
     "footer-3 footer-3 footer-3";
     
-}
+    }
 
-.section-header-3{
+    .section-header-3{
     grid-area: section-header-3;
-}
+    }
 
-.navbar-3{
+    .navbar-3{
     grid-area: navbar-3;
-}
-.start-information{
+    }
+    .start-information{
     grid-area: start-information;
-}
+    }
 
-.content-information{
+    .content-information{
     grid-area: content-information;
     display: flex;
     flex-direction: column;
     width: 500px;
-}
+    }
 
-.content-information-text{
+    .content-information-text{
     font-size: 20px;
-}
+    }
 
-.content-information-2{
+    .content-information-2{
     grid-area: content-information-2;
-}
+    }
 
-.container-information{
+    .container-information{
     background-color: burlywood;
     
 
-}
+    }
 
-.footer-3{
+    .footer-3{
     grid-area: footer-3;
-}
+    }
 
-.section-header-3, .navbar-3, .start-information, .content-information, .content-information-2, .footer-3{
+    .section-header-3, .navbar-3, .start-information, .content-information, .content-information-2, .footer-3{
     padding: 10px; 
     border: 2px solid;
-}
+    }
 
     
