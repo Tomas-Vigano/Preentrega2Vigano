@@ -10,7 +10,8 @@
         
         display: grid;
         justify-content: center;
-        grid-template-columns: 400px 400px 400px;
+        width: 100%;
+        grid-template-columns: 500px 500px 500px;
         grid-template-rows: 300px 50px 1000px 150px 200px;
         row-gap: 5px;
         column-gap: 5px;
@@ -37,7 +38,8 @@
 
     .section-header{
         grid-area: section-header;
-        background-color: blueviolet;
+        background-image: url(../Media/Imagenes/Valinor\ Shine.png);
+        background-position: center;
         display: flex;
         align-items: center;
         justify-content: center;    
@@ -46,7 +48,7 @@
     
     .header-tittle{
         text-align: center;
-        background-color: blue;
+        
         font-size: 80px;
         
     }
@@ -76,8 +78,6 @@
     }
 
     
-    
-
     .index-menu{
         grid-area: index-menu;
         display: flex;
@@ -112,10 +112,22 @@
         grid-area: footer;
     }
 
+
+
+
+
+
+
+
+
+
+
     .proyecto-2{
         
         display: grid;
         justify-content: center;
+        width: 100%;
+        height: 100vh;
         grid-template-columns: 200px 950px;
         grid-template-rows:300px 50px 100px 1000px 200px;
         row-gap: 5px;
@@ -175,14 +187,82 @@
         grid-area: footer-2;
     }
 
-
-
-
     .section-header-2, .navbar-2, .galery-information, .galery, .footer-2{
         padding: 10px; 
         border: 2px solid; 
 
     }
 
+
+
+
+
+
+
+
+
+
+.proyecto-3{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    column-gap: 5px;
+    row-gap: 5px;
+
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 300px 50px 100px 550px 250px 200px;
+    
+    grid-template-areas: 
+    
+    "section-header-3 section-header-3 section-header-3"
+    "navbar-3 navbar-3 navbar-3"
+    "start-information start-information start-information"
+    "content-information content-information content-information"
+    "content-information-2 content-information-2 content-information-2"
+    "footer-3 footer-3 footer-3";
+    
+}
+
+.section-header-3{
+    grid-area: section-header-3;
+}
+
+.navbar-3{
+    grid-area: navbar-3;
+}
+.start-information{
+    grid-area: start-information;
+}
+
+.content-information{
+    grid-area: content-information;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.content-information-text{
+    font-size: 20px;
+}
+
+.content-information-2{
+    grid-area: content-information-2;
+}
+
+.container-information{
+    background-color: burlywood;
+    
+
+}
+
+.footer-3{
+    grid-area: footer-3;
+}
+
+.section-header-3, .navbar-3, .start-information, .content-information, .content-information-2, .footer-3{
+    padding: 10px; 
+    border: 2px solid;
+}
 
     
