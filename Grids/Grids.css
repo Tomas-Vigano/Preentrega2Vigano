@@ -5,8 +5,9 @@
         padding:0;
         margin: 0;
         box-sizing: border-box;
-        overflow: auto;
         text-decoration: none;
+        overflow: auto;
+        
     }
 
     @font-face{
@@ -22,9 +23,8 @@
         display: grid;
         justify-content: space-between;
         grid-template-columns: 500px 500px 500px;
-        grid-template-rows: 400px 50px 1000px 150px 200px;
-        row-gap: 5px;
-        column-gap: 5px; 
+        grid-template-rows: 400px 50px 1100px 150px 200px;
+        background: linear-gradient(rgba(29, 36, 64, 1) ,rgba(29, 36, 64, 1 ));
         
         grid-template-areas:
         
@@ -40,14 +40,13 @@
         ;
     }
     .section-header, .navbar, .index-menu, .derivation-index-menu, .footer{
-        padding: 10px; 
-        border: 2px solid;  
+        padding: 10px;
+        
     
     }
     .section-header{
         grid-area: section-header;
-        background: linear-gradient(rgba(12,12,12,0.479),rgba(12,12,12,0.479)),url(../Media/Imagenes/Telperion.jpg);
-        /* background-image: url(../Media/Imagenes/Telperion.jpg); */
+        background: linear-gradient(rgba(29, 36, 64, 0.5) ,rgba(29,36,64,0.5)),url(../Media/Imagenes/Telperion.jpg);
         background-position: center;
         display: flex;
         align-items: center;
@@ -60,12 +59,13 @@
         font-family: 'LOTR';
         font-size: 100px;
         width: 800px;
-        color: white;
+        color:#fdbf5c;
         
     }   
     .navbar{
         grid-area: navbar;  
-        background-color: burlywood;
+        background-color:#9b0800;
+        
         
         
     }    
@@ -77,14 +77,20 @@
 
     } 
     .nav-item{
-        color: black;
+        color:#fdbf5c;
         font-family: 'LOTR', Courier, monospace;
-        font-size: 20px;
+        font-size: 22px;
     }
     .path-header{
-        font-size: 40px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        font-size: 50px;
+        font-family: "LOTR";
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 500px;
+        color:#f69a0b ;
+        text-align: center;
+        
+
     }
     .general-header-index{
         margin-bottom: 10px;
@@ -100,6 +106,9 @@
     }  
     .derivation-index-menu{
         grid-area: derivation-index-menu;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }  
     .images-of-arda{
         width: 300px;
@@ -122,74 +131,107 @@
 
     /* CSS GALERIA */
     .proyecto-2{
-        
-        display: grid;
-        justify-content: center;
-        width: 100%;
-        height: 100vh;
-        grid-template-columns: 200px 950px;
-        grid-template-rows:300px 50px 100px 1000px 200px;
-        row-gap: 5px;
-        column-gap: 5px;
-
-        grid-template-areas: 
-        
-        "section-header-2 section-header-2 "
-        
-        "navbar-2 navbar-2 "
-        
-        "galery-information galery "
-
-        "galery-information galery "
-
-        "footer-2 footer-2 ";
-
+    display: grid;
+    background: linear-gradient(rgba(29, 36, 64, 1) ,rgba(29, 36, 64, 1 ));
+    grid-template-columns: 250px 1000px;
+    grid-template-rows: 400px 50px 800px 200px 200px;
+    grid-template-areas: 
+    
+    "section-header-2 section-header-2 section-header-2"
+    
+    "navbar-2 navbar-2 navbar-2"
+    
+    "galery-information galery galery"
+    
+    "galery-information galery galery"
+    
+    "footer-2 footer-2 footer-2 ";   
     }
 
     .section-header-2{
         grid-area: section-header-2;
-        background-color: blueviolet;
+        background: linear-gradient(rgba(29, 36, 64, 0.3) ,rgba(29,36,64,0.3)),url(../Media/Imagenes/Telperion.jpg);
+        background-position: center;
         display: flex;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;  
+          
     }
-
+    .header-tittle-2{
+        text-align: center;
+        font-family: 'LOTR';
+        font-size: 100px;
+        width: 800px;
+        color:#fdbf5c ;
+        
+    }  
     .navbar-2{
-        grid-area: navbar-2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: brown;
-    }
-
-    .galery-information{
-        grid-row: galery-information;
-        font-size: 30px;
+        grid-area: navbar-2;  
+        background-color:#9b0800; 
+        background: linear-gradient(rgba(155, 8, 0, 0.6) ,rgba(155, 8, 0, 0.6));
         
     }
 
-    .galery{
-        grid-row: galery;
+    .navbar-2 ul{
         display: flex;
-    
-        justify-content: center;
-
-
+        justify-content: space-around;
+        width: 100%;
+    } 
+    .galery-information{
+        grid-row: galery-information;
+        font-size: 22px;
+        font-family: "LOTR"; 
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        line-height: 50px;
+        background: linear-gradient(rgba(155, 8, 0, 0.3) ,rgba(155, 8, 0, 0.3));
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        
     }
 
+    .item-information{
+        color: #fdbf5c;
+    }
+
+    .row-galery{
+        grid-row: galery;
+        background: linear-gradient(rgba(155, 8, 0, 0.3) ,rgba(155, 8, 0, 0.3));
+        display: flex;
+        margin-top: 10px;
+        gap: 10px;
+        padding: 10px;
+            
+    }
+
+    .column-galery{
+        display: 25%;
+    }
+
+    
     .image-galery{
-        height: 200px;
-        width: 300px;
+        width: 200px;
+        height: 100px;
+        border-radius: 5px;
+
+        
     }
 
     .footer-2{
         grid-area: footer-2;
+        background: linear-gradient(rgba(155, 8, 0, 0.3) ,rgba(155, 8, 0, 0.3));
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
 
-    .section-header-2, .navbar-2, .galery-information, .galery, .footer-2{
-        padding: 10px; 
-        border: 2px solid; 
-
+    .section-header-2, .navbar-2, .galery-information, .footer-2{
+        padding: 10px;
     }
 
 
