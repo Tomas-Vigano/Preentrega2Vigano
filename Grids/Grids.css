@@ -88,23 +88,17 @@
         background: linear-gradient(rgba(155, 8, 0, 0.3) ,rgba(155, 8, 0, 0.3));
        
     } 
-    
     .section-1{
         background-color:#fdbf5c;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-
     .general-header-index{
         margin-bottom: 10px;
         margin-top: 10px;
         font-size: 30px;
         font-family: "LOTR";
-        
-    }
-    
-    .images-div{
         
     }
     .derivation-index-menu{
@@ -150,7 +144,6 @@
     
     "footer-2 footer-2 footer-2 ";   
     }
-
     .section-header-2{
         grid-area: section-header-2;
         background: linear-gradient(rgba(29, 36, 64, 0.3) ,rgba(29,36,64,0.3)),url(../Media/Imagenes/Telperion.jpg);
@@ -174,7 +167,6 @@
         background: linear-gradient(rgba(155, 8, 0, 0.6) ,rgba(155, 8, 0, 0.6));
         
     }
-
     .navbar-2 ul{
         display: flex;
         justify-content: space-around;
@@ -196,11 +188,9 @@
         
         
     }
-
     .item-information{
         color: #fdbf5c;
     }
-
     .row-galery{
         grid-row: galery;
         background: linear-gradient(rgba(155, 8, 0, 0.3) ,rgba(155, 8, 0, 0.3));
@@ -210,12 +200,9 @@
         padding: 10px;
             
     }
-
     .column-galery{
         display: 25%;
-    }
-
-    
+    }   
     .image-galery{
         width: 200px;
         height: 100px;
@@ -223,7 +210,6 @@
 
         
     }
-
     .footer-2{
         grid-area: footer-2;
         background: linear-gradient(rgba(155, 8, 0, 0.3) ,rgba(155, 8, 0, 0.3));
@@ -232,7 +218,6 @@
         margin-right: 10px;
         margin-bottom: 10px;
     }
-
     .section-header-2, .navbar-2, .galery-information, .footer-2{
         padding: 10px;
     }
@@ -261,43 +246,35 @@
     "footer-3 footer-3 footer-3";
     
     }
-
     .section-header-3{
     grid-area: section-header-3;
     }
-
     .navbar-3{
     grid-area: navbar-3;
     }
     .start-information{
     grid-area: start-information;
     }
-
     .content-information{
     grid-area: content-information;
     display: flex;
     flex-direction: column;
     width: 500px;
     }
-
     .content-information-text{
     font-size: 20px;
     }
-
     .content-information-2{
     grid-area: content-information-2;
     }
-
     .container-information{
     background-color: burlywood;
     
 
     }
-
     .footer-3{
     grid-area: footer-3;
     }
-
     .section-header-3, .navbar-3, .start-information, .content-information, .content-information-2, .footer-3{
     padding: 10px; 
     border: 2px solid;
