@@ -23,7 +23,7 @@
         display: grid;
         justify-content: space-between;
         grid-template-columns: 500px 500px 500px;
-        grid-template-rows: 400px 50px 1100px 150px 200px;
+        grid-template-rows: 400px 70px 1500px 150px 200px;
         background: linear-gradient(rgba(29, 36, 64, 1) ,rgba(29, 36, 64, 1 ));
         
         grid-template-areas:
@@ -39,11 +39,7 @@
         "footer footer footer"
         ;
     }
-    .section-header, .navbar, .index-menu, .derivation-index-menu, .footer{
-        padding: 10px;
-        
     
-    }
     .section-header{
         grid-area: section-header;
         background: linear-gradient(rgba(29, 36, 64, 0.5) ,rgba(29,36,64,0.5)),url(../Media/Imagenes/Telperion.jpg);
@@ -55,19 +51,22 @@
         
     }   
     .header-tittle{
+        display: flex;
         text-align: center;
+        align-items: center;
+        justify-content: center;
         font-family: 'LOTR';
         font-size: 100px;
-        width: 800px;
+        height: 300px;
+        width: 100%;
         color:#fdbf5c;
+        
         
     }   
     .navbar{
         grid-area: navbar;  
         background-color:#9b0800;
-        
-        
-        
+    
     }    
     .navbar ul{
         display: flex;
@@ -85,14 +84,32 @@
         grid-area: index-menu;
         display: flex;
         flex-direction: column;
+        align-items: center;
         background: linear-gradient(rgba(155, 8, 0, 0.3) ,rgba(155, 8, 0, 0.3));
        
     } 
-    .section-1{
-        background-color:#fdbf5c;
+
+    .header-images-tittles{
         display: flex;
-        flex-direction: column;
         text-align: center;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        font-family: "LOTR";
+        color: #fdbf5c;
+       
+    }
+
+    
+    .section-1{
+        width: 800px;
+        height: 600px;  
+    }
+
+    .section-2{
+        width: 800px;
+        height: 600px;
+        
     }
     .general-header-index{
         margin-bottom: 10px;
