@@ -23,7 +23,7 @@
         display: grid;
         justify-content: space-between;
         grid-template-columns: 500px 500px 500px;
-        grid-template-rows: 400px 50px auto auto 200px;
+        grid-template-rows: 400px 50px 100%  200px;
         background: linear-gradient(rgba(29, 36, 64, 1) ,rgba(29, 36, 64, 1 ));
         
         grid-template-areas:
@@ -33,8 +33,7 @@
         "navbar navbar navbar"
         
         "index-menu index-menu index-menu"
-        
-        
+         
         "footer footer footer"
         ;
     }
@@ -64,7 +63,7 @@
     }   
     .navbar{
         grid-area: navbar;  
-        background: linear-gradient(rgba(0, 0, 0, 0.5) ,rgba(0, 0, 0, 0.5));
+        background: linear-gradient(rgba(0, 0, 0, 1) ,rgba(0, 0, 0, 1));
         display: flex;
         align-items: center;
 
@@ -103,6 +102,7 @@
         font-size: 40px;
         color:#fdbf5c;
         padding-top: 100px;
+        padding-bottom: 50px;
         
        
     }
@@ -112,7 +112,19 @@
         margin-top: 100px;
         width: 70%;
         height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+    }
+
+    .section-1-bis{
+        
+        width: 70%;
+    }
+
+    .section-2-bis{
+        width: 70%;
     }
 
     
@@ -188,104 +200,112 @@
 
 
 
+
+
+
     /* CSS GALERIA */
     .proyecto-2{
-    display: grid;
-    background: linear-gradient(rgba(29, 36, 64, 1) ,rgba(29, 36, 64, 1 ));
-    grid-template-columns: 250px 1000px;
-    grid-template-rows: 400px 50px 500px 200px 200px;
-    grid-template-areas: 
-    
-    "section-header-2 section-header-2 section-header-2"
-    
-    "navbar-2 navbar-2 navbar-2"
-    
-    "galery-information galery galery"
-    
-    "galery-information galery galery"
-    
-    "footer-2 footer-2 footer-2 ";   
+        background: linear-gradient(rgba(0, 0, 0, 0.6) ,rgba(0, 0, 0, 0.6)),url(../Media/Imagenes/pxfuel.jpg);
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 400px 50px 100px 1000px 200px;
+        grid-template-areas:
+        
+        "section-header-2 section-header-2 section-header-2"
+        "navbar-2 navbar-2 navbar-2"
+        "galery-items galery-pictures galery-pictures"
+        "galery-items galery-pictures galery-pictures"
+        "footer footer footer"; 
     }
+
     .section-header-2{
         grid-area: section-header-2;
-        background: linear-gradient(rgba(29, 36, 64, 0.3) ,rgba(29,36,64,0.3)),url(../Media/Imagenes/Telperion.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.4) ,rgba(0, 0, 0, 0.4)),url(../Media/Imagenes/Telperion.jpg);
         background-position: center;
         display: flex;
         align-items: center;
-        justify-content: center;  
-          
+        justify-content: center; 
     }
+
     .header-tittle-2{
+        display: flex;
         text-align: center;
+        align-items: center;
+        justify-content: center;
         font-family: 'LOTR';
         font-size: 100px;
-        width: 800px;
-        color:#fdbf5c ;
+        height: 300px;
+        width: 100%;
+        color: #fdbf5c;
         
-    }  
+        
+    } 
     .navbar-2{
         grid-area: navbar-2;  
-        background-color:#9b0800; 
-        background: linear-gradient(rgba(155, 8, 0, 0.6) ,rgba(155, 8, 0, 0.6));
-        
+        background: linear-gradient(rgba(0, 0, 0, 1) ,rgba(0, 0, 0, 1));
+        display: flex;
+        align-items: center;
     }
+
     .navbar-2 ul{
         display: flex;
         justify-content: space-around;
         width: 100%;
+        
+
+    }
+    .nav-item-2{
+        color:#fdbf5c;
+        font-family: 'LOTR', Courier, monospace;
+        font-size: 25px;  
     } 
-    .galery-information{
-        grid-row: galery-information;
-        font-size: 22px;
-        font-family: "LOTR"; 
+  
+    .galery-items{
+        grid-area: galery-items;
         display: flex;
         flex-direction: column;
-        text-align: center;
         align-items: center;
-        line-height: 50px;
-        background: linear-gradient(rgba(155, 8, 0, 0.3) ,rgba(155, 8, 0, 0.3));
+        text-align: center;
+        padding: 10px;
+        line-height: 25px;
+        background: linear-gradient(rgba(253, 253, 253, 0.2) ,rgba(255, 255, 255, 0.2));
+        margin-top: 10px;
+        margin-left: 10px ;
+   
+    }
+    .galery-item{
+        font-size: 20px ;
+    }
+    .galery-pictures{
+        display: grid;
+        grid-template-columns:repeat(auto-fill, minmax (250px, 1fr));
+        grid-area: galery-pictures;
+        background: linear-gradient(rgba(253, 253, 253, 0.2) ,rgba(255, 255, 255, 0.2));    
+        padding: 10px;
         margin-top: 10px;
         margin-left: 10px;
         margin-right: 10px;
-        
+      
+    
         
     }
-    .item-information{
-        color: #fdbf5c;
+    .footer{
+        grid-area: footer;
     }
-    .row-galery{
-        grid-row: galery;
-        background: linear-gradient(rgba(155, 8, 0, 0.3) ,rgba(155, 8, 0, 0.3));
+
+
+    
+    .picture{
+        background-color:#f69a0b ;
+        border:2px solid;
         display: flex;
-        margin-top: 10px;
-        gap: 10px;
-        padding: 10px;
-            
-    }
-    .column-galery{
-        display: 25%;
-    }   
-    .image-galery{
-        width: 200px;
-        height: 100px;
+        align-items: center;
+        justify-content: center;
         border-radius: 5px;
-
+     
         
     }
-    .footer-2{
-        grid-area: footer-2;
-        background: linear-gradient(rgba(155, 8, 0, 0.3) ,rgba(155, 8, 0, 0.3));
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
-    .section-header-2, .navbar-2, .galery-information, .footer-2{
-        padding: 10px;
-    }
-
-
-
+    
     /* CSS NOSOTROS */
     .proyecto-3{
     display: grid;
@@ -298,48 +318,12 @@
     grid-template-columns: 500px 500px 500px;
     grid-template-rows: 300px 50px 100px 550px 250px 200px;
     
-    grid-template-areas: 
-    
-    "section-header-3 section-header-3 section-header-3"
-    "navbar-3 navbar-3 navbar-3"
-    "start-information start-information start-information"
-    "content-information content-information content-information"
-    "content-information-2 content-information-2 content-information-2"
-    "footer-3 footer-3 footer-3";
     
     }
-    .section-header-3{
-    grid-area: section-header-3;
-    }
-    .navbar-3{
-    grid-area: navbar-3;
-    }
-    .start-information{
-    grid-area: start-information;
-    }
-    .content-information{
-    grid-area: content-information;
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    }
-    .content-information-text{
-    font-size: 20px;
-    }
-    .content-information-2{
-    grid-area: content-information-2;
-    }
-    .container-information{
-    background-color: burlywood;
+    
     
 
-    }
-    .footer-3{
-    grid-area: footer-3;
-    }
-    .section-header-3, .navbar-3, .start-information, .content-information, .content-information-2, .footer-3{
-    padding: 10px; 
-    border: 2px solid;
-    }
+    
+  
 
     
