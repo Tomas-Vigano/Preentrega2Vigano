@@ -9,7 +9,6 @@
         list-style: none;
         
     }
-
     @font-face{
         font-family: "LOTR";
         src: url(../Styles/Fonts/LOTR.TTF);
@@ -19,12 +18,11 @@
 
     /* CSS INDEX */
     .proyecto{
-        
-        display: grid;
         justify-content: space-between;
-        grid-template-columns: 500px 500px 500px;
-        grid-template-rows: 400px 50px 100%  200px;
-        background: linear-gradient(rgba(29, 36, 64, 1) ,rgba(29, 36, 64, 1 ));
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 400px 50px auto auto 200px;
+        
         
         grid-template-areas:
         
@@ -33,11 +31,12 @@
         "navbar navbar navbar"
         
         "index-menu index-menu index-menu"
+
+        "more-info more-info more-info"
          
         "footer footer footer"
         ;
-    }
-    
+    }   
     .section-header{
         grid-area: section-header;
         background: linear-gradient(rgba(0, 0, 0, 0.4) ,rgba(0, 0, 0, 0.4)),url(../Media/Imagenes/Telperion.jpg);
@@ -63,7 +62,7 @@
     }   
     .navbar{
         grid-area: navbar;  
-        background: linear-gradient(rgba(0, 0, 0, 1) ,rgba(0, 0, 0, 1));
+        background-color: black;
         display: flex;
         align-items: center;
 
@@ -89,9 +88,11 @@
         flex-direction: column;
         align-items: center;
         background: linear-gradient(rgba(0, 0, 0, 0.6) ,rgba(0, 0, 0, 0.6)),url(../Media/Imagenes/pxfuel.jpg);
-       
-    } 
-
+        background-attachment: fixed;
+     
+    }
+    
+    
     .header-images-tittles{
         display: flex;
         text-align: center;
@@ -101,41 +102,73 @@
         font-family: "LOTR";
         font-size: 40px;
         color:#fdbf5c;
-        padding-top: 100px;
-        padding-bottom: 50px;
+        margin-bottom: 50px;
+        
         
        
     }
-
     .section-1{
-        background: linear-gradient(rgba(253, 253, 253, 0.2) ,rgba(255, 255, 255, 0.2));
-        margin-top: 100px;
+        background: linear-gradient(rgba(255, 255, 255, 0.4) ,rgba(255, 255, 255, 0.4));
         width: 70%;
-        height: 70%;
+        margin-top: 10%;
+        margin-bottom: 5%;
         display: flex;
         flex-direction: column;
         align-items: center;
 
     }
-
     .section-1-bis{
         
-        width: 70%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+         
     }
-
     .section-2-bis{
-        width: 70%;
-    }
-
-    
-
-    .section-2{
-        background: linear-gradient(rgba(253, 253, 253, 0.2) ,rgba(255, 255, 255, 0.2));
-        margin-top: 100px;
-        width: 70%;
-        height: 70%;
+        
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        
     }
     
+    
+    
+    .more-info{
+        grid-area: more-info;
+        padding: 50px;
+        background: linear-gradient(rgba(0, 0, 0, 0.6) ,rgba(0, 0, 0, 0.6));
+
+    }
+    
+    .iframe-container{
+        display: flex;
+        justify-content: space-around;
+        background: linear-gradient(rgba(255, 255, 255, 0.4) ,rgba(255, 255, 255, 0.4));
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .position-iframe{
+        justify-content: space-around;
+    }
+
+    .map-name{
+        text-align: center;
+        font-family: "LOTR";
+        color:#fdbf5c;
+    }
+    .spotify-name{
+        text-align: center;
+        font-family: "LOTR";
+        color:#fdbf5c;
+    }
+
+    .spotify-playlist{
+        width: 630px;
+        height: 454px;
+    }
     .general-header-index{
         margin-bottom: 10px;
         margin-top: 10px;
@@ -143,36 +176,17 @@
         font-family: "LOTR";
         
     }
-    .derivation-index-menu{
-        grid-area: derivation-index-menu;
-        
-        
-            
-        
-        
-      
-    }  
-    .derivation-p{
-        margin-bottom: 10px;
-        margin-top: 10px;
-        font-size: 30px;
-        font-family: "LOTR";
-        color: aliceblue;
-        text-align: center;
-    }
 
-    
     .footer{
         grid-area: footer;
-        background: linear-gradient(rgba(253, 253, 253, 1) ,rgba(255, 255, 255, 1));
-        height: 100%;
+        background-color: black;
+        height: 210%;
         display: flex;
         flex-direction: column;
         align-items: center;
         
         
-    }
-    
+    }   
     .image-footer{
         width: 200px;
         height: 250px;
@@ -181,7 +195,6 @@
         
     
     }
-
     .footer-p{
         font-family: "LOTR";
         color:#f69a0b ;
@@ -190,12 +203,25 @@
         margin-bottom: 10px;
         
     }
-
     .footer-p2{
         font-family: 'Times New Roman', Times, serif;
         color: #f69a0b;
         font-size: 20px;
     }
+    @media(max-width:768px){
+        .navbar ul { 
+            display: block;
+            
+        }
+        
+    }
+
+
+
+
+
+
+
 
 
 
@@ -291,10 +317,7 @@
     }
     .footer{
         grid-area: footer;
-    }
-
-
-    
+    } 
     .picture{
         background-color:#f69a0b ;
         border:2px solid;
@@ -307,23 +330,92 @@
     }
     
     /* CSS NOSOTROS */
-    .proyecto-3{
-    display: grid;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    column-gap: 5px;
-    row-gap: 5px;
+    
 
-    grid-template-columns: 500px 500px 500px;
-    grid-template-rows: 300px 50px 100px 550px 250px 200px;
-    
-    
+    .nosotros{
+        display: grid;
+        grid-template-columns:00px 500px;
+        grid-template-rows:400px 50px  auto 500px 200px;
+        grid-template-areas: 
+        
+        "section-header-3 section-header-3 section-header-3"
+        "navbar-3 navbar-3 navbar-3"
+        "content-information content-information content-information"
+        "content-information-2 content-information-2 content-information-2"
+        "footer footer footer"
+        ;
     }
-    
-    
 
+    .section-header-3{
+        grid-area: section-header-3;
+        background: linear-gradient(rgba(0, 0, 0, 0.4) ,rgba(0, 0, 0, 0.4)),url(../Media/Imagenes/Telperion.jpg);
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-tittle-3{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: 'LOTR';
+        font-size: 100px;
+        height: 300px;
+        width: 100%;
+        color: #fdbf5c;
+        
+        
+    } 
     
+    .navbar-3{
+        grid-area: navbar-3;
+        background: linear-gradient(rgba(0, 0, 0, 1) ,rgba(0, 0, 0, 1));
+        display: flex;
+        align-items: center;
+    }
+    .navbar-3 ul{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        
+
+    }
+    .nav-item-3{
+        color:#fdbf5c;
+        font-family: 'LOTR', Courier, monospace;
+        font-size: 25px;  
+    } 
+
+
+    .ainulindale{
+        width: 800px;
+        
+    }
+    .content-information{
+        grid-area: content-information;
+        background-color: #f69a0b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-information-text{
+        background-color: blanchedalmond;
+        text-align:justify;
+        padding: 10px;
+        font-size: 20px;
+        line-height: 30px;
+
+        width: 50%;
+    }
   
+    .content-information-2{
+        grid-area: content-information-2;
+        background-color: #fdbf5c;
+    }
 
+    .footer{
+        grid-area: footer;
+    }
     
