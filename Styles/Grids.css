@@ -1,53 +1,60 @@
-    
     /* CSS GLOBAL */
-    
-    *{
-        padding:0;
+
+    * {
+        padding: 0;
         margin: 0;
         box-sizing: border-box;
         text-decoration: none;
         list-style: none;
-        
+
     }
-    @font-face{
+
+    @font-face {
         font-family: "LOTR";
         src: url(../Styles/Fonts/LOTR.TTF);
     }
 
+    a {
+        text-decoration: none;
+    }
+
+
+
+
+
 
 
     /* CSS INDEX */
-    .proyecto{
-        justify-content: space-between;
+    .proyecto {
         display: grid;
         grid-template-columns: 500px 500px;
-        grid-template-rows: 400px 50px auto auto 200px;
-        
-        
+        grid-template-rows: 400px 50px auto auto auto;
         grid-template-areas:
-        
-        "section-header section-header section-header"
-        
-        "navbar navbar navbar"
-        
-        "index-menu index-menu index-menu"
 
-        "more-info more-info more-info"
-         
-        "footer footer footer"
+            "section-header section-header section-header"
+
+            "navbar navbar navbar"
+
+            "index-menu index-menu index-menu"
+
+            "more-info more-info more-info"
+
+            "footer footer footer"
         ;
-    }   
-    .section-header{
+    }
+
+    .section-header {
         grid-area: section-header;
-        background: linear-gradient(rgba(0, 0, 0, 0.4) ,rgba(0, 0, 0, 0.4)),url(../Media/Imagenes/Telperion.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Media/Imagenes/Telperion.jpg);
         background-position: center;
         display: flex;
         align-items: center;
-        justify-content: center;  
-          
-        
-    }   
-    .header-tittle{
+        justify-content: center;
+
+
+    }
+
+    .header-tittle {
         display: flex;
         text-align: center;
         align-items: center;
@@ -56,44 +63,48 @@
         font-size: 100px;
         height: 300px;
         width: 100%;
-        color:#fdbf5c;
-        
-        
-    }   
-    .navbar{
-        grid-area: navbar;  
+        color: #fdbf5c;
+
+
+    }
+
+    .navbar {
+        grid-area: navbar;
         background-color: black;
         display: flex;
         align-items: center;
 
-    
-    }    
-    .navbar ul{
+
+
+    }
+
+    .navbar ul {
         display: flex;
         justify-content: space-around;
         width: 100%;
-        
 
-    } 
-    .nav-item{
-        color:#fdbf5c;
+
+    }
+
+    .nav-item {
+        color: #fdbf5c;
         font-family: 'LOTR', Courier, monospace;
         font-size: 25px;
-    
-        
+
+
     }
-    .index-menu{
+
+    .index-menu {
         grid-area: index-menu;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: linear-gradient(rgba(0, 0, 0, 0.6) ,rgba(0, 0, 0, 0.6)),url(../Media/Imagenes/pxfuel.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Media/Imagenes/pxfuel.jpg);
         background-attachment: fixed;
-     
+
     }
-    
-    
-    .header-images-tittles{
+
+    .header-images-tittles {
         display: flex;
         text-align: center;
         justify-content: center;
@@ -101,158 +112,194 @@
         align-items: center;
         font-family: "LOTR";
         font-size: 40px;
-        color:#fdbf5c;
-        margin-bottom: 50px;
-        
-        
-       
+
     }
-    .section-1{
-        background: linear-gradient(rgba(255, 255, 255, 0.4) ,rgba(255, 255, 255, 0.4));
-        width: 70%;
-        margin-top: 10%;
-        margin-bottom: 5%;
+
+    .header-images-tittles1 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        font-family: "LOTR";
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .section-1 {
+
         display: flex;
         flex-direction: column;
         align-items: center;
-
-    }
-    .section-1-bis{
-        
+        width: 100%;
+        gap: 50px;
         padding-top: 50px;
         padding-bottom: 50px;
-        padding-left: 50px;
-        padding-right: 50px;
-         
-    }
-    .section-2-bis{
-        
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 50px;
-        
-    }
-    
-    
-    
-    .more-info{
-        grid-area: more-info;
-        padding: 50px;
-        background: linear-gradient(rgba(0, 0, 0, 0.6) ,rgba(0, 0, 0, 0.6));
 
     }
-    
-    .iframe-container{
-        display: flex;
-        justify-content: space-around;
-        background: linear-gradient(rgba(255, 255, 255, 0.4) ,rgba(255, 255, 255, 0.4));
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    
-    .position-iframe{
-        justify-content: space-around;
+
+    .carousel-inner {
+        width: 1000px;
     }
 
-    .map-name{
-        text-align: center;
-        font-family: "LOTR";
-        color:#fdbf5c;
-    }
-    .spotify-name{
-        text-align: center;
-        font-family: "LOTR";
-        color:#fdbf5c;
-    }
-
-    .spotify-playlist{
-        width: 630px;
-        height: 454px;
-    }
-    .general-header-index{
-        margin-bottom: 10px;
-        margin-top: 10px;
-        font-size: 30px;
-        font-family: "LOTR";
-        
-    }
-
-    .footer{
+    .footer {
         grid-area: footer;
         background-color: black;
-        height: 210%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 50px;
+
+    }
+
+    .image-footer {
+        width: 200px;
+        height: 250px;
+    }
+
+    span .lotr-footer {
+        font-family: "LOTR";
+        font-size: 30px;
+    }
+
+    span p {
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+
+
+    /* CSS FORMULARIO */
+
+    .proyecto-contacto {
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 400px 50px auto auto;
+        grid-template-areas:
+
+            "section-header-3 section-header-3 section-header-3"
+
+            "navbar-3 navbar-3 navbar-3"
+
+            "form form form"
+
+            "footer-3 footer-3 footer-3"
+        ;
+    }
+
+    .section-header-3 {
+        grid-area: section-header-3;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Media/Imagenes/Telperion.jpg);
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .header-tittle-3 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: 'LOTR';
+        font-size: 100px;
+        height: 300px;
+        width: 100%;
+        color: #fdbf5c;
+
+
+    }
+
+    .navbar-3 {
+        grid-area: navbar-3;
+        background-color: black;
+        display: flex;
+        align-items: center;
+
+
+
+    }
+
+    .navbar-3 ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+
+    }
+
+    .nav-item-3 {
+        color: #fdbf5c;
+        font-family: 'LOTR', Courier, monospace;
+        font-size: 25px;
+
+
+    }
+
+    .form {
+        grid-area: form;
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Media/Imagenes/pxfuel.jpg);
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-        
-    }   
-    .image-footer{
-        width: 200px;
-        height: 250px;
-        margin-top: 50px;
-        margin-bottom: 25px;
-        
-    
+        padding: 50px;
     }
-    .footer-p{
+
+    .titulo-form {
         font-family: "LOTR";
-        color:#f69a0b ;
-        font-size: 20px;
+        font-size: 50px;
         text-align: center;
-        margin-bottom: 10px;
-        
-    }
-    .footer-p2{
-        font-family: 'Times New Roman', Times, serif;
-        color: #f69a0b;
-        font-size: 20px;
-    }
-    @media(max-width:768px){
-        .navbar ul { 
-            display: block;
-            
-        }
-        
     }
 
+    .mb-3 {
+        width: 600px;
+    }
 
+    .lotr-squad {
+        margin-top: 50px;
+        border-radius: 10px;
+        width: 800px;
+    }
 
+    .footer-3 {
+        grid-area: footer-3;
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 50px;
 
+    }
 
+    /* CSS NOSOTROS */
 
-
-
-
-
-
-
-
-
-    /* CSS GALERIA */
-    .proyecto-2{
-        background: linear-gradient(rgba(0, 0, 0, 0.6) ,rgba(0, 0, 0, 0.6)),url(../Media/Imagenes/pxfuel.jpg);
+    /* .section-header-2,.navbar-2,.content-menu,.content-information,.content-information-2,.content-information-3,.footer{
+        border: 2px solid;
+    }    
+    .proyecto-nosotros{
         display: grid;
-        grid-template-columns: 200px 1fr;
-        grid-template-rows: 400px 50px 100px 1000px 200px;
-        grid-template-areas:
+        grid-template-columns:500px 500px;
+        grid-template-rows: 400px 50px 500px 400px 200px 100px;
+        grid-template-areas: 
         
         "section-header-2 section-header-2 section-header-2"
         "navbar-2 navbar-2 navbar-2"
-        "galery-items galery-pictures galery-pictures"
-        "galery-items galery-pictures galery-pictures"
-        "footer footer footer"; 
+        "content-information content-information-2 content-information-2"
+        "content-information-3 content-information-3 content-information-3"
+        "footer footer footer"
+        ;
+        
     }
-
     .section-header-2{
-        grid-area: section-header-2;
+        grid-area:section-header-2;
         background: linear-gradient(rgba(0, 0, 0, 0.4) ,rgba(0, 0, 0, 0.4)),url(../Media/Imagenes/Telperion.jpg);
         background-position: center;
         display: flex;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;  
     }
-
     .header-tittle-2{
         display: flex;
         text-align: center;
@@ -262,160 +309,50 @@
         font-size: 100px;
         height: 300px;
         width: 100%;
-        color: #fdbf5c;
+        color:#fdbf5c;
         
         
-    } 
+    }  
     .navbar-2{
-        grid-area: navbar-2;  
-        background: linear-gradient(rgba(0, 0, 0, 1) ,rgba(0, 0, 0, 1));
+        grid-area:navbar-2;
+        background-color: black;
         display: flex;
         align-items: center;
-    }
 
+        
+    }
     .navbar-2 ul{
         display: flex;
         justify-content: space-around;
         width: 100%;
-        
-
+   
     }
     .nav-item-2{
         color:#fdbf5c;
         font-family: 'LOTR', Courier, monospace;
-        font-size: 25px;  
+        font-size: 25px;   
     } 
-  
-    .galery-items{
-        grid-area: galery-items;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-        line-height: 25px;
-        background: linear-gradient(rgba(253, 253, 253, 0.2) ,rgba(255, 255, 255, 0.2));
-        margin-top: 10px;
-        margin-left: 10px ;
-   
-    }
-    .galery-item{
-        font-size: 20px ;
-    }
-    .galery-pictures{
-        display: grid;
-        grid-template-columns:repeat(auto-fill, minmax (250px, 1fr));
-        grid-area: galery-pictures;
-        background: linear-gradient(rgba(253, 253, 253, 0.2) ,rgba(255, 255, 255, 0.2));    
-        padding: 10px;
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-      
-    
-        
-    }
-    .footer{
-        grid-area: footer;
-    } 
-    .picture{
-        background-color:#f69a0b ;
-        border:2px solid;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;
-     
-        
-    }
-    
-    /* CSS NOSOTROS */
-    
-
-    .nosotros{
-        display: grid;
-        grid-template-columns:00px 500px;
-        grid-template-rows:400px 50px  auto 500px 200px;
-        grid-template-areas: 
-        
-        "section-header-3 section-header-3 section-header-3"
-        "navbar-3 navbar-3 navbar-3"
-        "content-information content-information content-information"
-        "content-information-2 content-information-2 content-information-2"
-        "footer footer footer"
-        ;
-    }
-
-    .section-header-3{
-        grid-area: section-header-3;
-        background: linear-gradient(rgba(0, 0, 0, 0.4) ,rgba(0, 0, 0, 0.4)),url(../Media/Imagenes/Telperion.jpg);
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header-tittle-3{
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        font-family: 'LOTR';
-        font-size: 100px;
-        height: 300px;
-        width: 100%;
-        color: #fdbf5c;
-        
-        
-    } 
-    
-    .navbar-3{
-        grid-area: navbar-3;
-        background: linear-gradient(rgba(0, 0, 0, 1) ,rgba(0, 0, 0, 1));
-        display: flex;
-        align-items: center;
-    }
-    .navbar-3 ul{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        
-
-    }
-    .nav-item-3{
-        color:#fdbf5c;
-        font-family: 'LOTR', Courier, monospace;
-        font-size: 25px;  
-    } 
-
-
-    .ainulindale{
-        width: 800px;
-        
-    }
     .content-information{
-        grid-area: content-information;
+        grid-area:content-information;
         background-color: #f69a0b;
         display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        
     }
-    .content-information-text{
-        background-color: blanchedalmond;
-        text-align:justify;
-        padding: 10px;
-        font-size: 20px;
-        line-height: 30px;
-
-        width: 50%;
-    }
-  
-    .content-information-2{
-        grid-area: content-information-2;
-        background-color: #fdbf5c;
-    }
-
-    .footer{
-        grid-area: footer;
+    .logo-gondor{
+        width: 300px;
+        height: 300px;
     }
     
+    .content-information-2{
+        grid-area:content-information-2;
+        background-color:brown;
+    }
+    .content-information-3{
+        grid-area:content-information-3;
+        background-color:#fdbf5c;
+    }
+    .footer{
+        grid-area:footer;
+    } */
