@@ -15,71 +15,196 @@
 
 <body>
 
+    <!-- CONTENEDOR HEADER -->
+
+    <header class="header">
+
+        <h1 class="header-tittle">Made in ardA</h1>
+
+    </header>
+
+    <!-- CONTENEDOR NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./Index.html">Made in ardA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Database
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">El Silmarillion</a></li>
+                            <li><a class="dropdown-item" href="#">El Señor de los Anillos</a></li>
+                            <li><a class="dropdown-item" href="#">El Hobbit</a></li>
+                            <li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Galeria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Hobbits</a></li>
+                            <li><a class="dropdown-item" href="#">Enanos</a></li>
+                            <li><a class="dropdown-item" href="#">Elfos</a></li>
+                            <li><a class="dropdown-item" href="#">Hombres</a></li>
+                            <li><a class="dropdown-item" href="#">Magos</a></li>
+                            <li><a class="dropdown-item" href="#">Brujos</a></li>
+                            <li><a class="dropdown-item" href="#">Morgoth</a></li>
+                            <li><a class="dropdown-item" href="#">Sauron</a></li>
+                            <li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"></a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
     <!-- CONTENEDOR DE CODIGO -->
+    <main class="formulario">
 
-    <main class="proyecto-contacto">
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col">
 
-        <!-- CONTENEDOR HEADER -->
+                    <p class="fs-2">Ayudanos a mejoraR</p>
 
-        <div class="section-header-3">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom02" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustomUsername" class="form-label">Nombre de Usuario</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="text" class="form-control" id="validationCustomUsername"
+                                    aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom04" class="form-label">Estado</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Seleciona</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom05" class="form-label">Codigo Postal</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Acepto terminos y condiciones de uso
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
 
-            <h1 class="header-tittle">Made in ardA</h1>
+                        <div class="mb-3">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Tu correo</label>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Tu mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Enviar</button>
+                            </div>
+                    </form>
+
+                    <img src="../Media/Imagenes/lotr-squad.gif" class="img-fluid" alt="...">
+                </div>
+
+
+
+
+
+            </div>
 
         </div>
 
-        <!-- CONTENEDOR NAVBAR -->
+    </main>
 
-        <nav class="navbar-3">
-            <ul>
-                <li>
-                    <a class="nav-item-3" href="Index.html">inicio</a>
-                </li>
-                <li>
-                    <a class="nav-item-3" href="Nosotros.html">nosotros</a>
-                </li>
-                <li>
-                    <a class="nav-item-3" href="Database.html">database</a>
-                </li>
-                <li>
-                    <a class="nav-item-3" href="Galeria.html">galeria</a>
-                </li>
-                <li>
-                    <a class="nav-item-3" href="Contacto.html">contacto</a>
-                </li>
-            </ul>
-        </nav>
+    <!-- CONTENEDOR FOOTER -->
 
-        <div class="form">
-            <p class="titulo-form">Ayudanos a mejoraR </p>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">TU DIRECCIÓN EMAIL</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <footer class="footer">
+
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col">
+                    <img src="../Media/Imagenes/One Ring Red.png" class="img-fluid" alt="...">
+                </div>
+                <p class="fs-3">Made in ardA</p>
+                <p class="text-uppercase">TODOS LOS DERECHOS RESERVADOS</p>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">DEJANOS TU COMENTARIO </label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-
-
-            <img class="lotr-squad" src="../Media/Imagenes/lotr-squad.gif" alt="">
-
-
         </div>
 
-        <div class="footer-3">
-            <img class="image-footer" src="../Media/Imagenes/One Ring Red.png" alt="">
-            
-            <span>
-              <p class="lotr-footer">Made in ardA</p>
-            <p>TODOS LOS DERECHOS RESERVADOS</p>
-            </span>
-       
-          </div>
+    </footer>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 
 </body>
 
