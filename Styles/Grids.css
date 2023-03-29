@@ -28,16 +28,12 @@
     .proyecto {
         display: grid;
         grid-template-columns: 500px 500px;
-        grid-template-rows: 400px 50px auto auto auto;
+        grid-template-rows: 50px auto auto ;
         grid-template-areas:
-
-            "section-header section-header section-header"
 
             "navbar navbar navbar"
 
             "index-menu index-menu index-menu"
-
-            "more-info more-info more-info"
 
             "footer footer footer"
         ;
@@ -50,8 +46,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
-
+        height: 300px;
     }
 
     .header-tittle {
@@ -60,9 +55,7 @@
         align-items: center;
         justify-content: center;
         font-family: 'LOTR';
-        font-size: 100px;
-        height: 300px;
-        width: 100%;
+        font-size: 80px;
         color: #fdbf5c;
 
 
@@ -99,47 +92,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 50px;
+        gap: 50px;
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Media/Imagenes/pxfuel.jpg);
         background-attachment: fixed;
 
     }
 
-    .header-images-tittles {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-self: center;
-        align-items: center;
-        font-family: "LOTR";
-        font-size: 40px;
-
-    }
-
-    .header-images-tittles1 {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-self: center;
-        align-items: center;
-        font-family: "LOTR";
-        font-size: 40px;
-        margin-bottom: 50px;
-    }
-
-    .section-1 {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        gap: 50px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-
-    }
-
-    .carousel-inner {
-        width: 1000px;
+    .carousel .carousel-inner{
+        width: 800px;
     }
 
     .footer {
@@ -169,6 +130,8 @@
 
 
 
+
+
     /* CSS FORMULARIO */
 
     .proyecto-contacto {
@@ -176,8 +139,6 @@
         grid-template-columns: 500px 500px;
         grid-template-rows: 400px 50px auto auto;
         grid-template-areas:
-
-            "section-header-3 section-header-3 section-header-3"
 
             "navbar-3 navbar-3 navbar-3"
 
