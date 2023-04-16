@@ -1,0 +1,285 @@
+    /* CSS GLOBAL */
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+
+    }
+
+    @font-face {
+        font-family: "LOTR";
+        src: url(../Styles/Fonts/LOTR.TTF);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+    /* CSS INDEX */
+
+    .header {
+        grid-area: header;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Media/Imagenes/Telperion.jpg);
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        width: 100%;
+
+    }
+
+    .navbar-brand {
+        font-family: "LOTR";
+    }
+
+    .nav-link {
+        font-family: "LOTR";
+    }
+
+    .header-tittle {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: 'LOTR';
+        font-size: 100px;
+        color: #C9F299;
+    }
+
+
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(rgba(218, 247, 166, 0.4), rgba(218, 247, 166, 0.4)), url(../Media/Imagenes/pxfuel.jpg);
+        background-attachment: fixed;
+        padding-bottom: 180px;
+
+
+    }
+
+
+
+    .fs-1 {
+        font-family: "LOTR";
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+    }
+
+
+
+    .footer {
+        background-color: #C9F299;
+    }
+
+    .footer .container .row .col {
+        display: flex;
+        justify-content: center;
+        padding: 60px;
+
+
+
+
+    }
+
+    .footer .container .row .col img {
+        width: 250px;
+        height: 300px;
+
+    }
+
+
+
+
+
+
+
+
+    /* CSS FORMULARIO */
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(rgba(218, 247, 166, 0.4), rgba(218, 247, 166, 0.4)), url(../Media/Imagenes/pxfuel.jpg);
+        background-attachment: fixed;
+
+    }
+
+    .fs-2 {
+        font-family: "LOTR";
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+    }
+
+    .fs-3 {
+        font-family: "LOTR";
+        color: #f69a0b;
+    }
+
+    .text-uppercase {
+        color: #f69a0b;
+    }
+
+    .formulario .container .row .col .mb-3 .img-fluid {
+        border-radius: 6px;
+        width: 720px;
+        margin-top: 60px;
+    }
+
+
+
+    /* CSS NOSOTROS */
+    .nosotros {
+        background: linear-gradient(rgba(218, 247, 166, 0.4), rgba(218, 247, 166, 0.4)), url(../Media/Imagenes/pxfuel.jpg);
+        background-attachment: fixed;
+
+    }
+
+    .columna-titulo {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .titulo-nosotros {
+        font-family: "LOTR";
+        margin: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+
+
+    }
+
+    .tittle-h {
+        font-family: "LOTR";
+
+    }
+
+    .tittle-h2 {
+        font-family: "LOTR";
+
+    }
+
+    .span {
+        font-family: "LOTR";
+    }
+
+
+
+    .dragon-1 {
+        width: 200px;
+        height: 500px;
+        margin-right: 5px;
+
+
+
+    }
+
+    .dragon-2 {
+        width: 200px;
+        height: 500px;
+        margin-right: 5px;
+        margin-top: 15px;
+
+
+    }
+
+    .dragon-3 {
+        width: 200px;
+        height: 500px;
+        margin-top: 30px;
+
+
+    }
+
+    .informacion-nosotros {
+        text-align: justify;
+        line-height: 30px;
+        font-family: 'DM Sans', sans-serif;
+
+
+    }
+
+
+
+    .text-container-1 {
+        padding-left: 25px;
+        text-align: justify;
+
+    }
+
+    .hobbit-1 {
+        width: 200px;
+        height: 500px;
+        margin-top: 30px;
+        margin-right: 5px;
+    }
+
+    .hobbit-2 {
+        width: 200px;
+        height: 500px;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+
+    .hobbit-3 {
+        width: 200px;
+        height: 500px;
+    }
+
+    .texto-informacion-encontrar {
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    .informacion-hobbit {
+        text-align: justify;
+        line-height: 30px;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    .informacion-lotr {
+        text-align: justify;
+        line-height: 30px;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    .lotr-1 {
+        width: 200px;
+        margin-right: 5px;
+    }
+
+    .lotr-2 {
+        width: 200px;
+        margin-right: 5px;
+        margin-top: 15px;
+    }
+
+    .lotr-3 {
+        width: 200px;
+        margin-top: 30px;
+    }
+
+    .informacion-silmarillion {
+        text-align: justify;
+        line-height: 30px;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+     .Silma-5{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
