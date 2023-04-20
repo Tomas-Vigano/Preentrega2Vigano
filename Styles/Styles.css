@@ -154,14 +154,20 @@
 
     }
 
+    .img-taniquetil{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .taniquetil{
+        height: 100%;
+    }
+
+
     .titulo-nosotros {
         font-family: "LOTR";
         margin: 25px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-
-
     }
 
     .tittle-h {
@@ -178,108 +184,148 @@
         font-family: "LOTR";
     }
 
-
-
-    .dragon-1 {
-        width: 200px;
-        height: 500px;
-        margin-right: 5px;
-
-
-
-    }
-
-    .dragon-2 {
-        width: 200px;
-        height: 500px;
-        margin-right: 5px;
-        margin-top: 15px;
-
-
-    }
-
-    .dragon-3 {
-        width: 200px;
-        height: 500px;
-        margin-top: 30px;
-
-
-    }
-
     .informacion-nosotros {
         text-align: justify;
         line-height: 30px;
         font-family: 'DM Sans', sans-serif;
 
-
-    }
-
-
-
-    .text-container-1 {
-        padding-left: 25px;
-        text-align: justify;
-
-    }
-
-    .hobbit-1 {
-        width: 200px;
-        height: 500px;
-        margin-top: 30px;
-        margin-right: 5px;
-    }
-
-    .hobbit-2 {
-        width: 200px;
-        height: 500px;
-        margin-top: 15px;
-        margin-right: 5px;
-    }
-
-    .hobbit-3 {
-        width: 200px;
-        height: 500px;
     }
 
     .texto-informacion-encontrar {
         font-family: 'DM Sans', sans-serif;
     }
 
-    .informacion-hobbit {
+    .information-hobbit {
         text-align: justify;
         line-height: 30px;
         font-family: 'DM Sans', sans-serif;
     }
 
-    .informacion-lotr {
+    .information-lotr {
         text-align: justify;
         line-height: 30px;
         font-family: 'DM Sans', sans-serif;
     }
 
-    .lotr-1 {
-        width: 200px;
-        margin-right: 5px;
-    }
-
-    .lotr-2 {
-        width: 200px;
-        margin-right: 5px;
-        margin-top: 15px;
-    }
-
-    .lotr-3 {
-        width: 200px;
-        margin-top: 30px;
-    }
-
-    .informacion-silmarillion {
+    .information-silmarillion {
         text-align: justify;
         line-height: 30px;
         font-family: 'DM Sans', sans-serif;
     }
 
-     .Silma-5{
-        margin-left: 5px;
-        margin-right: 5px;
+    
+    /* MEDIA QUERIE IMAGEN BILBO */
+    
+    @media screen and (max-width: 768px){
+        div.fullscreen{
+            display: none;
+        }
+        div.mobileview{
+            display: block;
+        }
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        div.fullscreen{
+            display: block;
+        }
+        div.mobileview{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1920px){
+        div.mobileview{
+            display: none;
+        }
+    }
+
+    /* MEDIA QUERIE IMAGEN SILMARILLION */
+
+    @media screen and (max-width: 768px){
+        div.silmarillion-fullscreen{
+            display: none;
+        }
+        div.silmarillion-mobileview{
+            display: block;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        div.silmarillion-fullscreen{
+            display: block;
+        }
+        div.silmarillion-mobileview{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1920px){
+        div.silmarillion-mobileview{
+            display: none;
+        }
+    }
+
+
+    /* CSS HOBBIT PAGE*/
+    
+    .hobbit-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(rgba(218, 247, 166, 0.4), rgba(218, 247, 166, 0.4)), url(../Media/Imagenes/pxfuel.jpg);
+        background-attachment: fixed;
+    }
+    /* MEDIA QUERIE VIDEO "MISTY MOUNTAINS" */
+
+    @media screen and (max-width: 768px){
+        div.misty-mountains-fullscreen{
+            display: none;
+        }
+        div.misty-mountains-mobileview{
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        div.misty-mountains-fullscreen{
+            display: block;
+        }
+        div.misty-mountains-mobileview{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1920px){
+        div.misty-mountains-mobileview{
+            display: none;
+        }
+    }
+
+    /* MEDIA QUERIE VIDEO "UN BREVE DESCANSO" */
+
+    @media screen and (max-width: 768px){
+        div.quick-rest-fullscreen{
+            display: none;
+        }
+        div.quick-rest-mobileview{
+            display: block;
+            padding-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        div.quick-rest-fullscreen{
+            display: block;
+        }
+        div.quick-rest-mobileview{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1920px){
+        div.quick-rest-mobileview{
+            display: none;
+        }
+    }
+
+
