@@ -1,108 +1,292 @@
 /* CSS GLOBAL */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-  }
-  
-  @font-face {
-    font-family: "LOTR";
-    src: url(../Styles/Fonts/LOTR.TTF);
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  /* CSS INDEX */
-  
-  .header {
-    grid-area: header;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Media/Imagenes/Telperion.jpg);
-    background-position: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "LOTR";
+  src: url(../css/Fonts/LOTR.TTF);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CSS INDEX */
+
+.header {
+  grid-area: header;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Media/Imagenes/Telperion.jpg);
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+}
+
+.navbar-brand, .nav-link {
+  font-family: "LOTR";
+}
+
+.header-tittle {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'LOTR';
+  font-size: 100px;
+  color: #C9F299;
+}
+
+.proyecto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(218, 247, 166, 0.4), rgba(218, 247, 166, 0.4)), url(../Media/Imagenes/pxfuel.jpg);
+  background-attachment: fixed;
+  padding-bottom: 180px;
+}
+
+.fs-1 {
+  font-family: "LOTR";
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.footer {
+  background-color: #C9F299;
+
+  .container .row .col {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 300px;
-    width: 100%;
-  }
-  
-  .navbar-brand, .nav-link {
-    font-family: "LOTR";
-  }
-  
-  .header-tittle {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-family: 'LOTR';
-    font-size: 80px;
-    color: white;
-  }
-  
-  .proyecto {
-    grid-area: index-menu;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Media/Imagenes/pxfuel.jpg);
-    background-attachment: fixed;
-    padding-bottom: 180px;
-  }
-  
-  .fs-1 {
-    font-family: "LOTR";
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-  
-  .footer {
-    background-color: black;
-  
-    .container .row .col {
-      display: flex;
-      justify-content: center;
-      padding: 60px;
-  
-      img {
-        width: 250px;
-        height: 300px;
-      }
+    padding: 60px;
+
+    img {
+      width: 250px;
+      height: 300px;
     }
   }
-  
-  /* CSS FORMULARIO */
-  
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Media/Imagenes/pxfuel.jpg);
-    background-attachment: fixed;
+}
+
+/* CSS FORMULARIO */
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(218, 247, 166, 0.4), rgba(218, 247, 166, 0.4)), url(../Media/Imagenes/pxfuel.jpg);
+  background-attachment: fixed;
+}
+
+.fs-2 {
+  font-family: "LOTR";
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.fs-3 {
+  font-family: "LOTR";
+  color: #f69a0b;
+}
+
+.text-uppercase {
+  color: #f69a0b;
+}
+
+.formulario .container .row .col .mb-3 .img-fluid {
+  border-radius: 6px;
+  width: 720px;
+  margin-top: 60px;
+}
+
+/* CSS NOSOTROS */
+
+.nosotros {
+  background: linear-gradient(rgba(218, 247, 166, 0.4), rgba(218, 247, 166, 0.4)), url(../Media/Imagenes/pxfuel.jpg);
+  background-attachment: fixed;
+}
+
+.columna-titulo {
+  display: flex;
+  justify-content: center;
+}
+
+.img-taniquetil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taniquetil {
+  height: 100%;
+}
+
+.titulo-nosotros {
+  font-family: "LOTR";
+  margin: 25px;
+}
+
+.tittle-h, .tittle-h2, .span {
+  font-family: "LOTR";
+}
+
+.informacion-nosotros {
+  text-align: justify;
+  line-height: 30px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.texto-informacion-encontrar {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.information-hobbit, .information-lotr, .information-silmarillion {
+  text-align: justify;
+  line-height: 30px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* MEDIA QUERIE IMAGEN BILBO */
+
+@media screen and (max-width: 768px) {
+  div {
+    &.fullscreen {
+      display: none;
+    }
+
+    &.mobileview {
+      display: block;
+    }
   }
-  
-  .fs-2 {
-    font-family: "LOTR";
-    margin-top: 60px;
-    margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  div {
+    &.fullscreen {
+      display: block;
+    }
+
+    &.mobileview {
+      display: none;
+    }
   }
-  
-  .fs-3 {
-    font-family: "LOTR";
-    color: #f69a0b;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  div.mobileview {
+    display: none;
   }
-  
-  .text-uppercase {
-    color: #f69a0b;
+}
+
+/* MEDIA QUERIE IMAGEN SILMARILLION */
+
+@media screen and (max-width: 768px) {
+  div {
+    &.silmarillion-fullscreen {
+      display: none;
+    }
+
+    &.silmarillion-mobileview {
+      display: block;
+    }
   }
-  
-  .formulario .container .row .col .mb-3 .img-fluid {
-    border-radius: 6px;
-    width: 720px;
-    margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  div {
+    &.silmarillion-fullscreen {
+      display: block;
+    }
+
+    &.silmarillion-mobileview {
+      display: none;
+    }
   }
-  
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  div.silmarillion-mobileview {
+    display: none;
+  }
+}
+
+/* CSS HOBBIT PAGE*/
+
+.hobbit-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(218, 247, 166, 0.4), rgba(218, 247, 166, 0.4)), url(../Media/Imagenes/pxfuel.jpg);
+  background-attachment: fixed;
+}
+
+/* MEDIA QUERIE VIDEO "MISTY MOUNTAINS" */
+
+@media screen and (max-width: 768px) {
+  div {
+    &.misty-mountains-fullscreen {
+      display: none;
+    }
+
+    &.misty-mountains-mobileview {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  div {
+    &.misty-mountains-fullscreen {
+      display: block;
+    }
+
+    &.misty-mountains-mobileview {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  div.misty-mountains-mobileview {
+    display: none;
+  }
+}
+
+/* MEDIA QUERIE VIDEO "UN BREVE DESCANSO" */
+
+@media screen and (max-width: 768px) {
+  div {
+    &.quick-rest-fullscreen {
+      display: none;
+    }
+
+    &.quick-rest-mobileview {
+      display: block;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  div {
+    &.quick-rest-fullscreen {
+      display: block;
+    }
+
+    &.quick-rest-mobileview {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  div.quick-rest-mobileview {
+    display: none;
+  }
+}

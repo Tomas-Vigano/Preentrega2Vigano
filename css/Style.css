@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "LOTR";
-  src: url(../Styles/Fonts/LOTR.TTF);
+  src: url(../css/Fonts/LOTR.TTF);
 }
 a {
   text-decoration: none;
@@ -23,7 +23,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 400px;
   width: 100%;
 }
 
@@ -37,16 +37,15 @@ a {
   align-items: center;
   justify-content: center;
   font-family: "LOTR";
-  font-size: 80px;
-  color: white;
+  font-size: 100px;
+  color: #C9F299;
 }
 
 .proyecto {
-  grid-area: index-menu;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Media/Imagenes/pxfuel.jpg);
+  background: linear-gradient(rgba(218, 247, 166, 0.4), rgba(218, 247, 166, 0.4)), url(../Media/Imagenes/pxfuel.jpg);
   background-attachment: fixed;
   padding-bottom: 180px;
 }
@@ -58,7 +57,7 @@ a {
 }
 
 .footer {
-  background-color: black;
+  background-color: #C9F299;
 }
 .footer .container .row .col {
   display: flex;
@@ -75,7 +74,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Media/Imagenes/pxfuel.jpg);
+  background: linear-gradient(rgba(218, 247, 166, 0.4), rgba(218, 247, 166, 0.4)), url(../Media/Imagenes/pxfuel.jpg);
   background-attachment: fixed;
 }
 
@@ -100,4 +99,149 @@ a {
   margin-top: 60px;
 }
 
-/* # sourceMappingURL=Style.css.map */
+/* CSS NOSOTROS */
+.nosotros {
+  background: linear-gradient(rgba(218, 247, 166, 0.4), rgba(218, 247, 166, 0.4)), url(../Media/Imagenes/pxfuel.jpg);
+  background-attachment: fixed;
+}
+
+.columna-titulo {
+  display: flex;
+  justify-content: center;
+}
+
+.img-taniquetil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taniquetil {
+  height: 100%;
+}
+
+.titulo-nosotros {
+  font-family: "LOTR";
+  margin: 25px;
+}
+
+.tittle-h, .tittle-h2, .span {
+  font-family: "LOTR";
+}
+
+.informacion-nosotros {
+  text-align: justify;
+  line-height: 30px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.texto-informacion-encontrar {
+  font-family: "DM Sans", sans-serif;
+}
+
+.information-hobbit, .information-lotr, .information-silmarillion {
+  text-align: justify;
+  line-height: 30px;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* MEDIA QUERIE IMAGEN BILBO */
+@media screen and (max-width: 768px) {
+  div.fullscreen {
+    display: none;
+  }
+  div.mobileview {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  div.fullscreen {
+    display: block;
+  }
+  div.mobileview {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  div.mobileview {
+    display: none;
+  }
+}
+/* MEDIA QUERIE IMAGEN SILMARILLION */
+@media screen and (max-width: 768px) {
+  div.silmarillion-fullscreen {
+    display: none;
+  }
+  div.silmarillion-mobileview {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  div.silmarillion-fullscreen {
+    display: block;
+  }
+  div.silmarillion-mobileview {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  div.silmarillion-mobileview {
+    display: none;
+  }
+}
+/* CSS HOBBIT PAGE*/
+.hobbit-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(218, 247, 166, 0.4), rgba(218, 247, 166, 0.4)), url(../Media/Imagenes/pxfuel.jpg);
+  background-attachment: fixed;
+}
+
+/* MEDIA QUERIE VIDEO "MISTY MOUNTAINS" */
+@media screen and (max-width: 768px) {
+  div.misty-mountains-fullscreen {
+    display: none;
+  }
+  div.misty-mountains-mobileview {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  div.misty-mountains-fullscreen {
+    display: block;
+  }
+  div.misty-mountains-mobileview {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  div.misty-mountains-mobileview {
+    display: none;
+  }
+}
+/* MEDIA QUERIE VIDEO "UN BREVE DESCANSO" */
+@media screen and (max-width: 768px) {
+  div.quick-rest-fullscreen {
+    display: none;
+  }
+  div.quick-rest-mobileview {
+    display: block;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  div.quick-rest-fullscreen {
+    display: block;
+  }
+  div.quick-rest-mobileview {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  div.quick-rest-mobileview {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Style.css.map */
